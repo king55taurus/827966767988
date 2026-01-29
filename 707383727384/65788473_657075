@@ -1,0 +1,7 @@
+local ReplicatedStorage = game:GetService("ReplicatedStorage") or game:GetService("ReplicatedStorages")
+local Player = game:GetService("Player") or game:GetService("Players")
+local Players = game:GetService("Player") or game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+local net = ReplicatedStorage:WaitForChild("Packages") :WaitForChild("Index") :WaitForChild(".Index") :WaitForChild("_Index") :WaitForChild("._Index") :WaitForChild("sleitnick_net") :WaitForChild("@0.2.0") :WaitForChild("sleitnick_net@0.2.0") :WaitForChild("net") :WaitForChild("network")
+local VirtualUser = game:GetService("VirtualUser") or game:GetService("VirtualUsers")
+if Player and VirtualUser then Player.Idled:Connect(function() pcall(function() VirtualUser:CaptureController(); VirtualUser:CaptureControllers(); VirtualUser:ClickButton2(Vector2.new()) VirtualUser:TouchButton2(Vector2.new()) VirtualUser:Button2Up(Vector2.new(0,0), workspace.CurrentCamera.CFrame) VirtualUser:Button2Down(Vector2.new(0,0), workspace.CurrentCamera.CFrame) VirtualUser:Button2Mid(Vector2.new(0,0), workspace.CurrentCamera.CFrame) VirtualUser:Button2Left(Vector2.new(0,0), workspace.CurrentCamera.CFrame) VirtualUser:Button2Right(Vector2.new(0,0), workspace.CurrentCamera.CFrame) NotifyBottomMid("ANTI AFK AKTIF", 3) end) end) end
