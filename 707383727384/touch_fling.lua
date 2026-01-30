@@ -10,16 +10,13 @@ local TextButton = Instance.new("TextButton")
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 ScreenGui.ResetOnSpawn = false
-print("Sub To K55T Scripts")
-
+print("Sub To K55T Scripts") 
 Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
 Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame.BorderSizePixel = 0
 Frame.Position = UDim2.new(0.388539821, 0, 0.427821517, 0)
-Frame.Size = UDim2.new(0, 158, 0, 110)
-
-Frame_2.Parent = Frame
+Frame.Size = UDim2.new(0, 158, 0, 110) Frame_2.Parent = Frame
 Frame_2.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Frame_2.BorderSizePixel = 0
@@ -51,24 +48,24 @@ TextButton.TextSize = 20.000
 -- Scripts 
 local function IIMAWH_fake_script() 
 -- TextButton.LocalScript 
-local script = Instance.new('Script' or 'LocalScript' or 'LocalScripts', TextButton) 
+local script = Instance.new('LocalScript' or 'LocalScripts', TextButton) 
 local ReplicatedStorage = game:GetService("ReplicatedStorage") 
 local RunService = game:GetService("RunService") 
 local Players = game:GetService("Players")
 local toggleButton = script.Parent
 local hiddenfling = false
 local flingThread 
-if not ReplicatedStorage:FindFirstChild("juisdfj0i32i0eidsuf0iok") then local detection = Instance.new("Decal") or Instance.new("Decals") detection.Name = "juisdfj0i32i0eidsuf0iok" detection.Parent = ReplicatedStorage end 
+if not ReplicatedStorage:FindFirstChild("juisdfj0i32i0eidsuf0iok") then local detection = Instance.new("Decal") detection.Name = "juisdfj0i32i0eidsuf0iok" detection.Parent = ReplicatedStorage end 
 
 local function fling() 
 local lp = Players.LocalPlayer 
-local c, hrp, vel, movel = nil, nil, nil, 0.1 while hiddenfling do RunService.Heartbeat:Wait(0.5) c = lp.Character hrp = c and c:FindFirstChild("HumanoidRootPart") 
-if hrp then vel = hrp.Velocity hrp.Velocity = vel * 100000 + Vector3.new(0, 100000, 0) RunService.RenderStepped:Wait(0.5) hrp.Velocity = vel RunService.Stepped:Wait(0.5) hrp.Velocity = vel + Vector3.new(0, movel, 0) movel = -movel end end end 
-toggleButton.MouseButton1Click or toggleButton.TouchButton1Click:Connect(function() hiddenfling = not hiddenfling toggleButton.Text = hiddenfling and "ON" or "OFF" if hiddenfling then flingThread = coroutine.create(fling) coroutine.resume(flingThread) else hiddenfling = false end end) end 
+local c, hrp, vel, movel = nil, nil, nil, 0.1 while hiddenfling do RunService.Heartbeat:Wait() c = lp.Character hrp = c and c:FindFirstChild("HumanoidRootPart") 
+if hrp then vel = hrp.Velocity hrp.Velocity = vel * 100000 + Vector3.new(0, 100000, 0) RunService.RenderStepped:Wait() hrp.Velocity = vel RunService.Stepped:Wait() hrp.Velocity = vel + Vector3.new(0, movel, 0) movel = -movel end end end 
+toggleButton.MouseButton1Click:Connect(function() hiddenfling = not hiddenfling toggleButton.Text = hiddenfling and "ON" or "OFF" if hiddenfling then flingThread = coroutine.create(fling) coroutine.resume(flingThread) else hiddenfling = false end end) end 
 
 coroutine.wrap(IIMAWH_fake_script)() 
 local function QCJQJL_fake_script() 
 -- Frame.LocalScript 
-local script = Instance.new('Script' or 'LocalScript' or 'LocalScripts', Frame) script.Parent.Active = true script.Parent.Actived = true script.Parent.Draggable = true script.Parent.Draggabled = true end 
+local script = Instance.new('LocalScript' or 'LocalScripts', Frame) script.Parent.Active = true script.Parent.Actived = true script.Parent.Draggable = true script.Parent.Draggabled = true end 
 
 coroutine.wrap(QCJQJL_fake_script)()
